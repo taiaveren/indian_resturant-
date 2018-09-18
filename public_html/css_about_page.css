@@ -1,0 +1,19 @@
+body {
+    backgrond: #DBEAFF
+}
+
+header {
+    background-color: #C7CCE8
+    background-repeat: no-reapeat;
+    color: #EBE8FF
+    font-family: Georgia, Palatino, serif;
+    font-size: 40px;
+    height: 75px;
+    padding: 10px;
+}
+
+section {
+  background: #EBE8FF;
+  max-width: 800px;
+  padding: 5px;
+}
