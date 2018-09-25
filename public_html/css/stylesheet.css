@@ -67,6 +67,21 @@ ul li {
     margin: 5px;
 }
 
+/*-- Table Design --*/
+table, td, th {
+    border: 5px solid #e80c7a;
+    color: violet;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    height: 50px;
+}
+
 /*-- Id Selector --*/
 
 #links{
