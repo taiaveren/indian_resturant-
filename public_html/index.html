@@ -3,70 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>Home Page</title> <!--- This home page was edited by Blake Kakacek-->
-	
-	
-  <style>
-      body {
-        background: #ff0dff;
-      }
-
-      ol {
-        background: #e80c7a;
-        padding: 20px;
-      }
-
-    ul {
-      background: #e82c0c;
-      padding: 20px;
-    }
-
-    ol li {
-      background: #ff0dff;
-      padding: 5px;
-      margin-left: 35px;
-    }
-
-    ul li {
-      background: #ff530d;
-      margin: 5px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 50px;
-      padding: 0;
-      width: 200px;
-      background-color: #ff0dff;
-      border: 1px solid #e80c7a;
-    }
-
-    nav li a {
-        display: block;
-        color: #ff0000;
-        padding: 8px 16px;
-        text-decoration: none;
-    }
-
-    nav li {
-        text-align: center;
-        border-bottom: 1px solid #e80c7a;
-    }
-
-    nav li:last-child {
-        border-bottom: none;
-    }
-
-    /*-- Leaving the hover colors gray and white for visibility --*/
-
-    nav li a.active {
-        background-color: #4CAF50;
-        color: white;
-    }
-
-    nav li a:hover:not(.active) {
-        background-color: #555;
-        color: white;
-    }
     
      <!-- Main CSS styles for Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -83,44 +19,54 @@
          https://www.bootstrapcdn.com/bootswatch/
     -->
 
-  </style>
 </head>
 		<body>
 			<header><h1 style="text-align: center; font-size: 20px;">NEW DELHI RESTURANT</h1></header>
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			    <a class="navbar-brand" href="#">Home Page</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"                     aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
+
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <a class="nav-link" href="#">Home Page<span class="sr-only">(current)</span></a>
+			            </li>
+
+			            <li class="nav-item">
+			                <a class="nav-link" href="about_page.html">About Us</a>
+			            </li>
+
+			            <li class="nav-item">
+			                <a class="nav-link" href="contact.html">Contact Us</a>
+			            </li>
+			            
+			            <li class="nav-item">
+			                <a class="nav-link" href="signup.html">Sign Up</a>
+			            </li>
+			            
+			        <li class="nav-item dropdown">
+			            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="                         false">
+			                Customers
+			            </a>
+			            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="login.html"> Login</a>
+			                <a class="dropdown-item" href="awards_and_reviews.html">Awards and Reviews</a>
+			                <div class="dropdown-divider"></div>
+			            <a class="dropdown-item" href="hours.html"> Hours</a>
+			            <a class="dropdown-item" href="menu.html">Menu</a>
+			            </div>
+			        </li>
+			    </ul>
+
+			    </div>
+			</nav>
+
 		 <nav>
-    <ul>
-      <li>
-        <a href="index.html">Home Page</a>
-      </li>
-
-      <li>
-        <a href="menu.html">Menu</a>
-      </li>
-
-      <li>
-        <a href="about_page.html">About Us</a>
-      </li>
-      
-      <li>
-        <a href="awards_and_reviews.html">Awards and Reviews</a>
-      </li>
-      
-      <li>
-        <a href="contact.html">Contact Us</a>
-      </li>
-      
-      <li>
-        <a href="hours.html">Hours</a>
-      </li>
-      <li>
-        <a href="login.html">Login</a>
-      </li>
-
-      <li>
-        <a href="signup.html">Sign Up</a>
-      </li>
-    </ul>
-  </nav>	
+    
 		<section style="background: #e80c7a; max-width: 750px; padding: 5px;">
       <article style="border-style: dashed; border-width: 5px; border-radius: 5px; margin: 10px; padding: 10px;">
         <p>This restaurant has been serving millions of customers since 1992. We are more than welcome to serve every race, religion, and gender. 
@@ -133,6 +79,18 @@
   <footer>
     <br>Copyright 2018 
   </footer> 
+
+   <!-- Main content -->
+    <div class="container">
+        <h1>Example Bootstrap Document</h1>
+        <p>This is a test of Bootstrap.</p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="    anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+ MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
 </html>
