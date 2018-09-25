@@ -1,9 +1,10 @@
+
 body {
 	background: #e82c0c;
 }
 h1 {
     text-align: center;
-    text-decoration-color: #e80c7a;
+    font-style: #e80c7a;
     font-size: 20px;
 }
 
