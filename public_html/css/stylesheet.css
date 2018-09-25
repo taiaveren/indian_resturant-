@@ -1,3 +1,4 @@
+/*-- Main External Style Structure --*/
 
 body {
 	background: #e82c0c;
@@ -11,7 +12,7 @@ header {
 
 section {
   background: #e80c7a;
-  max-width: 800px;
+  max-width: 750px;
   padding: 5px;
 }
 
@@ -35,6 +36,8 @@ p {
 	font-family: arial, sans-serif;
 }
 
+/*-- List details --*/
+
 ol {
     background: #e80c7a;
     padding: 20px;
@@ -55,6 +58,8 @@ ul li {
     background: #ff530d;
     margin: 5px;
 }
+
+/*-- Id Selector --*/
 
 #links{
 	font-style:italic;
@@ -86,6 +91,8 @@ nav li {
 nav li:last-child {
     border-bottom: none;
 }
+
+/*-- Leaving the hover colors gray and white for visibility --*/
 
 nav li a.active {
     background-color: #4CAF50;
