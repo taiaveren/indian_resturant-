@@ -4,55 +4,88 @@
 <!---This page was edited by Blake Kakacek -->
 	<meta charset="utf-8">
 	<title>Hours</title>
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	 <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sandstone/bootstrap.min.css">
+
+    <!-- If you don't like how sandstone looks, go here and see other themes
+         that are available:
+         https://bootswatch.com/
+
+         You can replace the 'optional theme' with links from the page below
+         to get that theme:
+         https://www.bootstrapcdn.com/bootswatch/
+    -->
+  
 </head>
 <body>
  <header>
   <h1>Hours</h1>
  </header>
  
- <nav>
-     <ul>
-       <li>
-         <a href="index.html">Home Page</a>
-       </li>
+ <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			    <a class="navbar-brand" href="#">Home Page</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"                     aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
 
-       <li>
-         <a href="menu.html">Menu</a>
-       </li>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-       <li>
-         <a href="about_page.html">About Us</a>
-       </li>
-      
-       <li>
-         <a href="awards_and_reviews.html">Awards and Reviews</a>
-       </li>
-      
-       <li>
-         <a href="contact.html">Contact Us</a>
-       </li>
-      
-       <li>
-         <a href="hours.html">Hours</a>
-       </li>
-      
-       <li>
-         <a href="login.html">Login</a>
-       </li>
-      
-       <li>
-         <a href="signup.html">Sign Up</a>
-       </li>
-     </ul>
-   </nav>
-   
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="#">Home Page<span class="sr-only">(current)</span></a>
+			                </button>
+			            </li>
+
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="about_page.html">About Us</a>
+			                </button>
+			            </li>
+
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="contact.html">Contact Us</a>
+			                </button>
+			            </li>
+			            
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="signup.html">Sign Up</a>
+			                </button>
+			            </li>
+			            
+			        <li class="nav-item dropdown">
+			           
+			            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                Customers
+			            </a>
+
+			            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="login.html"> Login</a>
+			                <a class="dropdown-item" href="awards_and_reviews.html">Awards and Reviews</a>
+			                <div class="dropdown-divider"></div>
+			            <a class="dropdown-item" href="hours.html"> Hours</a>
+			            <a class="dropdown-item" href="menu.html">Menu</a>
+			            </div>
+			        </li>
+			    </ul>
+
+			    </div>
+			</nav>
+ <br />
+
  <b>Restaurant Hours:</b>
- <table>
+ <br />
+ 
+ <table class="table table-bordered">
   <thead>
-   <tr>
-    <th>Days</th>
-    <th>Hours</th>
+   <tr class= "table-primary">
+    <th scope= "col">Days</th>
+    <th scope= "col">Hours</th>
    </tr>
   </thead>
   <tbody>
@@ -68,9 +101,9 @@
  </table>
  <br>
  <b>Buffet Hours:</b>
- <table>
+ <table class="table table-bordered">
   <thead>
-   <tr>
+   <tr class= "table-primary">
     <th>Days</th>
     <th>Lunch</th>
     <th>Dinner</th>
@@ -94,9 +127,16 @@
   </tbody>
  </table>
  <br />
- <img src="img/clock.png" alt="Clock Icon.">
+ <img src="img/clock.png" class="rounded mx-auto d-block" alt="Clock Icon.">
     <footer>
         <br>Copyright 2018
     </footer>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="    anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+    MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
 </body>
 </html>
