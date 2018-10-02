@@ -15,68 +15,93 @@
 </head>
 
 <body>
-    <header>
-        <h1><u>Awards and Reviews</u></h1>
-    </header>
-    
-    <nav>
-        <ul>
-        <li>
-            <a href="index.html">Home Page</a>
-        </li>
+		    <div class="container">
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			    <a class="navbar-brand" href="#">New Delhi Restaurant</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"                                  aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
 
-        <li>
-          <a href="menu.html">Menu</a>
-        </li>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-        <li>
-          <a href="about_page.html">About Us</a>
-        </li>
-      
-        <li>
-          <a href="awards_and_reviews.html">Awards and Reviews</a>
-        </li>
-      
-        <li>
-          <a href="contact.html">Contact Us</a>
-        </li>
-      
-        <li>
-          <a href="hours.html">Hours</a>
-        </li>
-      
-        <li>
-          <a href="login.html">Login</a>
-        </li>
-      
-        <li>
-          <a href="signup.html">Sign Up</a>
-        </li>
-      </ul>
-    </nav>
-    
-    <h3>Three Reasons You Need To Stuff Your Face Our Food:</h3>
-    
-    <ol>
-        <li>Published by Brett's Newspaper four times as "The Best Indian Restaurant in Iowa" (1998, 2005, 2010, 2017)</li>
-        <li>3-time nominee of "The Best Indian Dish in the United States" (Sag Paneer: 2000, 2005, 2015)</li>
-        <li>Celebrities like Brad Pitt, Kim Kardashian, and Gabe Newell order our food daily!</li>
-    </ol>
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="index.html">Home Page<span class="sr-only">(current)</span></a>
+			                </button>
+			            </li>
 
-    <section>
-      <article>
-        <b>Brady Dafna 5 Stars</b><br>
-        <p>"They have the best Sag Paneer I've ever had! The service is great and the atmosphere is very family-friendly. I will definitely come back."</p><br>
-        <b>Raja Maria 5 Stars</b><br>
-        <p>"Such a unique restaurant in West Des Moines. I wish there were more gems like this!"</p>
-        <b>Robert Downey Jr. 5 Stars</b><br>
-        <p>"Great restaurant! This should be in the next Avengers movie!"</p>
-      </article>
-    </section>
-    <br />
-    <img src="img/trophy.png" alt="Trophy Icon">
-    <footer>
-        Copyright 2018 
-    </footer>
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="about_page.html">About Us</a>
+			                </button>
+			            </li>
+
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="contact.html">Contact Us</a>
+			                </button>
+			            </li>
+			            
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="signup.html">Sign Up</a>
+			                </button>
+			            </li>
+			            
+			        <li class="nav-item dropdown">
+			           
+			            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                Customers
+			            </a>
+
+			            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="login.html"> Login</a>
+			                <a class="dropdown-item" href="awards_and_reviews.html">Awards and Reviews</a>
+			                <div class="dropdown-divider"></div>
+			            <a class="dropdown-item" href="hours.html"> Hours</a>
+			            <a class="dropdown-item" href="menu.html">Menu</a>
+			            </div>
+			        </li>
+			    </ul>
+
+			    </div>
+			</nav>
+			<br />
+			
+			<h1 class="text-center">Awards and Reviews</h1>
+			<br />
+    
+            <h3 class="font-italic">Three Reasons You Need To Stuff Your Face Our Food:</h3>
+    
+            <ol>
+                <li class="list-group-item">Published by Brett's Newspaper four times as "The Best Indian Restaurant in Iowa" (1998, 2005, 2010, 2017)</li>
+                <li class="list-group-item">3-time nominee of "The Best Indian Dish in the United States" (Sag Paneer: 2000, 2005, 2015)</li>
+                <li class="list-group-item">Celebrities like Brad Pitt, Kim Kardashian, and Gabe Newell order our food daily!</li>
+            </ol>
+
+            <span class="d-block p-2 bg-dark text-white">
+            <section>
+              <article>
+                <b>Brady Dafna 5 Stars</b><br>
+                <p>"They have the best Sag Paneer I've ever had! The service is great and the atmosphere is very family-friendly. I will definitely come back."</p>
+                <b>Raja Maria 5 Stars</b><br>
+                <p>"Such a unique restaurant in West Des Moines. I wish there were more gems like this!"</p>
+                <b>Robert Downey Jr. 5 Stars</b><br>
+                <p>"Great restaurant! This should be in the next Avengers movie!"</p>
+              </article>
+            </section>
+            </span>
+            <br />
+            <img src="img/trophy.png" class="rounded mx-auto d-block" alt="Trophy Icon">
+            <footer>
+                Copyright 2018 
+            </footer>
+            </div>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"        ></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"        crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"           crossorigin="anonymous"></script>
 </body>
 </html>
