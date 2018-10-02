@@ -3,60 +3,96 @@
 <head>
 	<meta charset="utf-8">
 	<title>Login</title> <!---This page was edited by Blake Kakacek -->
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+ 
+	 <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sandstone/bootstrap.min.css">
+    
 </head>
-<body> 
-	<header>
-	 <h1>Login</h1>
-	</header>
-   <h1>Great Food Awaits</h1>
-	<nav>
-	<ul>
-      <li>
-        <a href="index.html">Home Page</a>
-      </li>
+<body>
+		    <div class="container">
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			    <a class="navbar-brand" href="#">New Delhi Restaurant</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"                                  aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
 
-      <li>
-        <a href="menu.html">Menu</a>
-      </li>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <li>
-        <a href="about_page.html">About Us</a>
-      </li>
-      
-      <li>
-        <a href="awards_and_reviews.html">Awards and Reviews</a>
-      </li>
-      
-      <li>
-        <a href="contact.html">Contact Us</a>
-      </li>
-      
-      <li>
-        <a href="hours.html">Hours</a>
-      </li>
-      
-      <li>
-        <a href="login.html">Login</a>
-      </li>
-      
-      <li>
-        <a href="signup.html">Sign Up</a>
-      </li>
-    </ul>
-  </nav>
-  <br />
-  <img src="img/login_icon.png" alt="Login Icon">
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="#">Home Page<span class="sr-only">(current)</span></a>
+			                </button>
+			            </li>
+
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="about_page.html">About Us</a>
+			                </button>
+			            </li>
+
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="contact.html">Contact Us</a>
+			                </button>
+			            </li>
+			            
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="signup.html">Sign Up</a>
+			                </button>
+			            </li>
+			            
+			        <li class="nav-item dropdown">
+			           
+			            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                Customers
+			            </a>
+
+			            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="login.html"> Login</a>
+			                <a class="dropdown-item" href="awards_and_reviews.html">Awards and Reviews</a>
+			                <div class="dropdown-divider"></div>
+			            <a class="dropdown-item" href="hours.html"> Hours</a>
+			            <a class="dropdown-item" href="menu.html">Menu</a>
+			            </div>
+			        </li>
+			    </ul>
+
+			    </div>
+			</nav>
+			<br />
+			
+			<header class="text-center">
+			    <h1>Login Page</h1>
+			</header>
+            <h1>Great Food Awaits</h1>
+           <br />
+           
+           <img src="img/login_icon.png" class="rounded mx-auto d-block" alt="Login Icon">
+           
+           <span class="d-block p-2 bg-primary text-white">
+            <form>
+             <div class="form-group">
+               <label for="username">Username</label>
+               <input type="text" class="form-control" id="username" placeholder="Enter username">
+             </div>
+             <div class="form-group">
+               <label for="examplePpassword1">Password</label>
+               <input type="password" class="form-control" id="examplePassword1" placeholder="Password">
+             </div>
+                <a href="index.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Submit</a>
+           </form>
+           </span>
+           
+           </div>
   
-  <form>
-  Username or Email:<br>
-  <input type="text" name="username"><br>
-  Password:<br>
-  <input type="text" name="password"><br>
-  <input type="submit" value="Submit">
-  </form>
-  
-<footer>
-Copyright 2018
-</footer>
-</body>
+ <footer>
+ Copyright 2018
+ </footer>
+ </body>
+</html>
