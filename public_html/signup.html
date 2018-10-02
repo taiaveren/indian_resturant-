@@ -10,92 +10,117 @@
     <!-- Optional theme add-on -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sandstone/bootstrap.min.css">
 </head>
-<body>
-<h1>New Delhi Resturant</h1>
-<form action ="/action_page.php">  <!---This page was editited by Blake Kakacek -->
-<nav>
-    <ul>
-      <li>
-        <a href="index.html">Home Page</a>
-      </li>
+	<body>
+		    <div class="container">
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			    <a class="navbar-brand" href="#">New Delhi Restaurant</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"                                  aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
 
-      <li>
-        <a href="menu.html">Menu</a>
-      </li>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <li>
-        <a href="about_page.html">About Us</a>
-      </li>
-      
-      <li>
-        <a href="awards_and_reviews.html">Awards and Reviews</a>
-      </li>
-      
-      <li>
-        <a href="contact.html">Contact Us</a>
-      </li>
-      
-      <li>
-        <a href="hours.html">Hours</a>
-      </li>
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="index.html">Home Page<span class="sr-only">(current)</span></a>
+			                </button>
+			            </li>
 
-      <li>
-      	<a href="login.html">Login</a>
-      </li>
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="about_page.html">About Us</a>
+			                </button>
+			            </li>
 
-      <li>
-      	<a href="signup.html">Sign Up</a>
-      </li>
-    </ul>
- </nav>
-	First Name:<br>
-	<input type="text"
-	name="firstname"> 
-	<br>
-	Last Name:<br>
-	<input type="text"
-	name="lastname">
-	<br>
-	Email: <br>
-	<input type="text"
-	name="email">
-	<br>
-	Username:<br>
-	<input type="text"
-	name="username">
-	<br>
-	Password:<br>
-	<input type="text"
-	name="password">
-	<br>
-	Verify Password:<br>
-	<input type="text"
-	name="password">
-	<br>
-	Date of Birth: <br>
-	<input type="text"
-	name="dateofbirth">
-	<br>
-	Gender:<br>
-	<input type="radio"
-	name="gender" value="male" 
-	checked> Male<br>
-	<input type="radio"
-	name="gender" value="female">
-	Female<br>
-	<input type="radio"
-	name="gender" value="other">
-	Other
-	<br>
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="contact.html">Contact Us</a>
+			                </button>
+			            </li>
+			            
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="signup.html">Sign Up</a>
+			                </button>
+			            </li>
+			            
+			        <li class="nav-item dropdown">
+			           
+			            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                Customers
+			            </a>
 
-	<br><br>
+			            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="login.html"> Login</a>
+			                <a class="dropdown-item" href="awards_and_reviews.html">Awards and Reviews</a>
+			                <div class="dropdown-divider"></div>
+			            <a class="dropdown-item" href="hours.html"> Hours</a>
+			            <a class="dropdown-item" href="menu.html">Menu</a>
+			            </div>
+			        </li>
+			    </ul>
 
-	<input type="Submit"
-	name="Submit" value="Submit">
-</form>
-<br>
-<br>
-<footer> Copyright 2018
-</footer>
+			    </div>
+			</nav>
+			<br />
+			
+			<h1 class="text-center">Sign-up:</h1>
+			
+			<form>
+             <div class="form-group">
+               <label for="exampleName">First Name:</label>
+               <input type="text" class="form-control" id="exampleName" placeholder="Enter First Name">
+             </div>
+             <div class="form-group">
+               <label for="exampleLast">Last Name:</label>
+               <input type="text" class="form-control" id="exampleLast" placeholder="Enter Last Name">
+             </div>
+             <div class="form-group">
+               <label for="exampleEmail">Email</label>
+               <input type="text" class="form-control" id="exampleEmail" placeholder="Enter Email">
+             </div>
+             <div class="form-group">
+               <label for="exampleUsername">Username</label>
+               <input type="text" class="form-control" id="exampleUsername" placeholder="Enter username">
+             </div>
+             <div class="form-group">
+               <label for="examplePpassword1">Password</label>
+               <input type="password" class="form-control" id="examplePassword1" placeholder="Password">
+             </div>
+             <div class="form-group">
+               <label for="exampleVerify">Verify Password</label>
+               <input type="password" class="form-control" id="exampleVerify" placeholder="Verify password">
+             </div>
+             <div class="form-group">
+               <label for="dateOfBirth">Date Of Birth</label>
+               <input type="text" class="form-control" id="dateOfBirth" placeholder="Enter date of birth.">
+             </div>
+                <a href="index.html" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Submit</a>
+           </form>
+			
+            Gender:<br>
+            <input type="radio"
+            name="gender" value="male" 
+            checked> Male<br>
+            <input type="radio"
+            name="gender" value="female">
+            Female<br>
+            <input type="radio"
+            name="gender" value="other">
+            Other
+            <br>
+            
+            <div class="alert alert-success" role="alert">
+                You chose a great time to sign up! Click <a href="menu.html" class="alert-link">here</a> to choose a free menu item with a lunch purchase! 
+            </div>
+            <footer> Copyright 2018
+            </footer>
+            </div>
+            
+             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="                 anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"        crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"           crossorigin="anonymous"></script>
 </body>
 </html>
