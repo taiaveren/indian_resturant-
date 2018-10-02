@@ -3,69 +3,100 @@
 <head>
 	<meta charset="utf-8">
 	<title>About Us</title> <!---This page was edited by Blake Kakacek -->
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sandstone/bootstrap.min.css">
 </head>
-<body> 
-	<header>
-    <h1>About Us</h1>
-  </header>
-<nav>
-    <ul>
-      <li>
-        <a href="index.html">Home Page</a>
-      </li>
+<body>
+		    <div class="container">
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			    <a class="navbar-brand" href="#">New Delhi Restaurant</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"                                  aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
 
-      <li>
-        <a href="menu.html">Menu</a>
-      </li>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <li>
-        <a href="about_page.html">About Us</a>
-      </li>
-      
-      <li>
-        <a href="awards_and_reviews.html">Awards and Reviews</a>
-      </li>
-      
-      <li>
-        <a href="contact.html">Contact Us</a>
-      </li>
-      
-      <li>
-        <a href="hours.html">Hours</a>
-      </li>
-      
-      <li>
-        <a href="login.html">Login</a>
-      </li>
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="index.html">Home Page<span class="sr-only">(current)</span></a>
+			                </button>
+			            </li>
 
-      <li>
-        <a href="signup.html">Sign Up</a>
-      </li>
-    </ul>
-  </nav>  <!--hello -->
-	<section>
-    <article>
-    <p>We are an Indian restaurant located in 200 Bishnu Ave, West Des Moines, Iowa 50159. 
-  	This restaurant was founded by Bishnu Adhikari and Brett Dewerff in 1992. 
-  	We are proud to serve everyone as our customer and hope that you will leave satisfied after every visit. 
-  	We have been published in Brett's Newspaper four times since 1992 as the best Indian restaurant in Iowa.</p>
-  	<p>We plan to expand to different parts of Iowa while maintaining good service and award winning entrees. 
-  	We also plan to expand to be able to open a bar at the West Des Moines location, so we can expand our hours of operation and add other means of entertainment.</p>
-    </article>
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="about_page.html">About Us</a>
+			                </button>
+			            </li>
 
-    <article>
-      <img src="img/bishnu.jpg" alt="Bishnu Photo">
-      <h3>Bishnu Adhikari</h3>
-      <br />
-      <img src="img/brett.jpg" alt="Brett Photo">
-      <h3>Brett Dewerff</h3>
-    </article>
-  </section>	
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="contact.html">Contact Us</a>
+			                </button>
+			            </li>
+			            
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="signup.html">Sign Up</a>
+			                </button>
+			            </li>
+			            
+			        <li class="nav-item dropdown">
+			           
+			            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                Customers
+			            </a>
 
-  <footer>
-    Copyright 2018
-  </footer>
+			            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="login.html"> Login</a>
+			                <a class="dropdown-item" href="awards_and_reviews.html">Awards and Reviews</a>
+			                <div class="dropdown-divider"></div>
+			            <a class="dropdown-item" href="hours.html"> Hours</a>
+			            <a class="dropdown-item" href="menu.html">Menu</a>
+			            </div>
+			        </li>
+			    </ul>
+
+			    </div>
+			</nav>
+			<br />
+			
+			<h1 class="text-center">About Us</h1>
+			
+			<div class="jumbotron">
+             <h1 class="display-6">Bringing Indian Food to You!!</h1>
+             <p class="lead">We are an Indian restaurant located in 200 Bishnu Ave, West Des Moines, Iowa 50159. 
+             This restaurant was founded by Bishnu Adhikari and Brett Dewerff in 1992. 
+             We are proud to serve everyone as our customer and hope that you will leave satisfied after every visit. 
+             We have been published in Brett's Newspaper four times since 1992 as the best Indian restaurant in Iowa.</p>
+             <hr class="my-4">
+             <p>We plan to expand to different parts of Iowa while maintaining good service and award winning entrees. 
+              We also plan to expand to be able to open a bar at the West Des Moines location, so we can expand our hours of operation and add other means of entertainment.</p>
+             <a class="btn btn-primary btn-lg" href="signup.html" role="button">Become a Member</a>
+			</div>
+			
+            <article>
+              <img src="img/bishnu.jpg" class="rounded float-left" alt="Bishnu Photo">
+              <h3 class="text-left">Bishnu Adhikari</h3>
+              <br />
+              <img src="img/brett.jpg" class="rounded float-right" alt="Brett Photo">
+              <h3 class="text-right">Brett Dewerff</h3>
+            </article>
+          </section>	
+          
+          <br />
+          <footer>
+            Copyright 2018
+          </footer>
+          </div>
+  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"        ></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"        crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"           crossorigin="anonymous"></script>
 </body>
 </html>
 
