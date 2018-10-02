@@ -4,88 +4,129 @@
 <!---This page was editited by Blake Kakacek -->
 	<meta charset="utf-8">
 	<title>Menu</title>
-  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	
+   <!-- Main CSS styles for Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- Optional theme add-on -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sandstone/bootstrap.min.css">
 </head>
-<body>
-    <header><h1>Menu</h1></header>
-<nav>
-    <ul>
-      <li>
-        <a href="index.html">Home Page</a>
-      </li>
+	<body>
+		    <div class="container">
+			
+			<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+			    <a class="navbar-brand" href="#">New Delhi Restaurant</a>
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"                                  aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="navbar-toggler-icon"></span>
+			    </button>
 
-      <li>
-        <a href="menu.html">Menu</a>
-      </li>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-      <li>
-        <a href="about_page.html">About Us</a>
-      </li>
-      
-      <li>
-        <a href="awards_and_reviews.html">Awards and Reviews</a>
-      </li>
-      
-      <li>
-        <a href="contact.html">Contact Us</a>
-      </li>
-      
-      <li>
-        <a href="hours.html">Hours</a>
-      </li>
-      
-      <li>
-        <a href="login.html">Login</a>
-      </li>
-      
-      <li>
-        <a href="signup.html">Sign Up</a>
-      </li>
-    </ul>
-  </nav>
-<h2>Lunch Buffet - &dollar;10.99</h2>
-<h2>Dinner Buffet - &dollar;11.99</h2>
-<section>
-  <article>
-    <h3 class="obil">Appetizers</h3>
-      <ul>
-          <li><b>Samosa Vegetable: </b>Crispy puffs filled with potatoes and green peas. &dollar;4.99</li>
-          <li><b>Vegetarian Pakora: </b>Mixed vegetable fritters. &dollar;4.99</li>
-          <li><b>Meat Samosa: </b>Crisp turnovers stuffed with spiced ground lamb. &dollar;4.99</li>
-       </ul> 
-      <h3 class="times">Vegetarian Specialties Entrees</h3>
-      <ul>
-      	<li><b>Mixed Vegetable: </b>Vegetables cooked in a light curry. 
-      	Potatoes, Cauliflower, Carrots, French Beans, Onions, Tomatoes &dollar;8.99</li>
-      	<li><b>Mushroom Mattar: </b>Green peas, mushrooms & spices with coconut sauce. 
-      	Onion, Ginger, Garam Masala, Coriander Powder, Green Peas, Coconut Cream &dollar;9.99</li>
-      	<li><b>Sag Paneer: </b>Fresh spinach cooked with herbs & spices w/homemade cheese cubes. 
-      	Spinach, Paneer, Canola Oil, Onion, Ginger, Tomato, Garam Masala &dollar;9.99</li>
-      </ul>
-      <h3 class="obil">Seafood</h3>
-      <ul>
-      	<li><b>Fish: </b>Fish cooked with coconut sauce and spices. Vegetable Oil, Onion, Turmeric &dollar;10.99</li>
-      	<li><b>Prawn: </b>Prawn cooked with coconut sauce and spices. Onion, Tomato, Garam Masala, Chili Powder &dollar;10.99</li>
-      	<li><b>Fish Tikka Masala: </b>Tandoori fish cooked with herbs. Onion, Ginger, Tomato, Garam Masala, Milk Cream &dollar;11.99</li>
-      </ul>
-      <h3 class="times">Lamb Dishes</h3>
-      <ul>
-          <li><b>Lamb Curry: </b>Lamb cubes cooked with herbs and spices. 
-          Vegetable Oil, Bay Leaves, Ginger, Garlic, Garam Masala, Tomato, Cilantro, Lamb. &dollar;9.99<br></li>
-          <li><b>Shahi Korma: </b>Lamb cube pieces cooked with saffron and nuts. 
-          Cloves, Beef Broth, Vegetable Oil, Cardamon, Cinnamon, Pepper, Garam Masala, Lamb &dollar;9.99</li>
-          <li><b>Lamb Palak: </b>Lamb cubes cooked with spinach and herbs. 
-          Onion, Ginger, Cumin, Spinach, Lamb, Tomato&dollar;9.99</li>
-      </ul>
-  </article>
-  <article>
-    <img src="img/chicken.jpg" alt="chicken" />
-    <img src="img/chaumin.jpg" alt="chaumin" />
-    <img src="img/momo.jpg" alt="momo" />
-    <br>
-  </article>
-</section>
-<footer>
-Copyright 2018
-</footer>
+			        <ul class="navbar-nav mr-auto">
+			            <li class="nav-item active">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="#">Home Page<span class="sr-only">(current)</span></a>
+			                </button>
+			            </li>
+
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="about_page.html">About Us</a>
+			                </button>
+			            </li>
+
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-primary">
+			                    <a class="nav-link" href="contact.html">Contact Us</a>
+			                </button>
+			            </li>
+			            
+			            <li class="nav-item">
+			                <button type="button" class="btn btn-light">
+			                    <a class="nav-link" href="signup.html">Sign Up</a>
+			                </button>
+			            </li>
+			            
+			        <li class="nav-item dropdown">
+			           
+			            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                Customers
+			            </a>
+
+			            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			            <a class="dropdown-item" href="login.html"> Login</a>
+			                <a class="dropdown-item" href="awards_and_reviews.html">Awards and Reviews</a>
+			                <div class="dropdown-divider"></div>
+			            <a class="dropdown-item" href="hours.html"> Hours</a>
+			            <a class="dropdown-item" href="menu.html">Menu</a>
+			            </div>
+			        </li>
+			    </ul>
+
+			    </div>
+			</nav>
+			<br />
+			
+			<h1  class="text-center">Menu</h1>
+			
+			<span class="d-block p-2 bg-primary text-white">
+                <h2 class="text-center">Lunch Buffet - &dollar;10.99</h2>
+                <h2 class="text-center">Dinner Buffet - &dollar;11.99</h2>
+			</span>
+			
+            <section>
+              <article>
+                <h3 class="font-italic">Appetizers</h3>
+                    <ul>
+                      <li class="list-group-item list-group-item-primary"><b>Samosa Vegetable: </b>Crispy puffs filled with potatoes and green peas. &dollar;4.99</li>
+                      <li class="list-group-item list-group-item-primary"><b>Vegetarian Pakora: </b>Mixed vegetable fritters. &dollar;4.99</li>
+                      <li class="list-group-item list-group-item-primary"><b>Meat Samosa: </b>Crisp turnovers stuffed with spiced ground lamb. &dollar;4.99</li>
+                   </ul>
+                    
+                  <h3 class="font-italic">Vegetarian Specialties Entrees</h3>
+                  <ul>
+                    <li class="list-group-item"><b>Mixed Vegetable: </b>Vegetables cooked in a light curry. 
+                    Potatoes, Cauliflower, Carrots, French Beans, Onions, Tomatoes &dollar;8.99</li>
+                    <li class="list-group-item"><b>Mushroom Mattar: </b>Green peas, mushrooms & spices with coconut sauce. 
+                    Onion, Ginger, Garam Masala, Coriander Powder, Green Peas, Coconut Cream &dollar;9.99</li>
+                    <li class="list-group-item"><b>Sag Paneer: </b>Fresh spinach cooked with herbs & spices w/homemade cheese cubes. 
+                    Spinach, Paneer, Canola Oil, Onion, Ginger, Tomato, Garam Masala &dollar;9.99</li>
+                  </ul>
+                  
+                  <h3 class="font-italic">Seafood</h3>
+                  <ul>
+                    <li class="list-group-item list-group-item-primary"><b>Fish: </b>Fish cooked with coconut sauce and spices. Vegetable Oil, Onion, Turmeric &dollar;10.99</li>
+                    <li class="list-group-item list-group-item-primary"><b>Prawn: </b>Prawn cooked with coconut sauce and spices. Onion, Tomato, Garam Masala, Chili Powder                           &dollar;10.99</li>
+                    <li class="list-group-item list-group-item-primary"><b>Fish Tikka Masala: </b>Tandoori fish cooked with herbs. Onion, Ginger, Tomato, Garam Masala, Milk                          Cream &dollar;11.99</li>
+                  </ul>
+                  
+                  <h3 class="font-italic">Lamb Dishes</h3>
+                  <ul>
+                      <li class="list-group-item"><b>Lamb Curry: </b>Lamb cubes cooked with herbs and spices. 
+                      Vegetable Oil, Bay Leaves, Ginger, Garlic, Garam Masala, Tomato, Cilantro, Lamb. &dollar;9.99<br></li>
+                      <li class="list-group-item"><b>Shahi Korma: </b>Lamb cube pieces cooked with saffron and nuts. 
+                      Cloves, Beef Broth, Vegetable Oil, Cardamon, Cinnamon, Pepper, Garam Masala, Lamb &dollar;9.99</li>
+                      <li class="list-group-item"><b>Lamb Palak: </b>Lamb cubes cooked with spinach and herbs. 
+                      Onion, Ginger, Cumin, Spinach, Lamb, Tomato&dollar;9.99</li>
+                  </ul>
+              </article>
+              <article>
+                <img src="img/chicken.jpg" alt="chicken" />
+                <img src="img/chaumin.jpg" alt="chaumin" />
+                <img src="img/momo.jpg" alt="momo" />
+                <br>
+              </article>
+            </section>
+            
+            <footer>
+                Copyright 2018
+            </footer>
+            </div>
+            
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"        ></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"        crossorigin="anonymous"></script>
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"          crossorigin="anonymous"></script>
 </body>
+</html>
