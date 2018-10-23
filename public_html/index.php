@@ -8,46 +8,12 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.1.3/sandstone/bootstrap.min.css">
 
 </head>
 <body>
 			
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a href="index.html" class="navbar-right"><img src="img/b&b.jpg"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about_page.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="menu.html">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="login.html">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="signup.html">Sign Up</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="hours.html">Hours</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="awards_and_reviews.html">More Info</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-
-  </div>
+    <?php include '../resources/navigation.php'; ?>
 </nav>
 
 <div class="jumbotron">
@@ -69,7 +35,10 @@
 		People have always enjoyed our food and dishes. We welcome everyone to our webpage. 
 		Feel free to ask us any questions or contact us about any experiences you've had at our restaurant, good or bad. 
 		Our contact information can be found on the 'Contact' page. We are very proud to serve everyone as our customers.</p>
-<img style="border-style: double; color: #15959F;"src="img/lamb.jpg." alt="lamb curry" class="center"/>
+</div>
+</div>
+
+<img style="border-style: double; color: #15959F;" src="img/lamb.jpg." alt="lamb curry" class="center"/>
 <img style="border-style: double; color: #15959F;" src="img/thali.jpg" alt="thali" class="center"/>
 
 <br>
@@ -88,11 +57,12 @@
   <input type="submit" value="Submit" class="btn btn-primary">
   </form>
 
-<footer>
-<br>Copyright 2018 by Bishnu Adhikari and Brett Dewerff 
-</footer> 
+ <?php include '../resources/footer.php'; ?>
     </div>
-</div>
-</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
 </body>
 </html>

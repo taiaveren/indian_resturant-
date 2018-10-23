@@ -13,42 +13,7 @@
 </head>
 <body> 
 	
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a href="index.html" class="navbar-right"><img src="img/new_delhi_graphic.jpg" width="120" height="120" alt="New Delhi"></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarColor01">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="about_page.html">About <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="menu.html">Menu</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="login.html">Login</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="signup.html">Sign Up</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="hours.html">Hours</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="awards_and_reviews.html">More Info</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-    </ul>
-
-  </div>
-</nav>
+    <?php include '../resources/navigation.php'; ?>
 <br>
 <div class="container">  
 <p>Log in to your New Delhi Restaurant Rewards Club account! This account allows you to have VIP access to our restaurant's deals, coupons, and special offers. You're in-the-know with everything New Delhi Restaurant and you also have first-priority for making reservations with us. As a reminder, your membership with us is completely free! We value you as a loyal customer and thank you for your support of New Delhi Restaurant.</p>
@@ -64,9 +29,7 @@
   <input type="submit" value="Submit" class="btn btn-primary">
   </form>
   <br>
-<footer>
-Copyright 2018 by Bishnu Adhikari and Brett Dewerff
-</footer>
+ <?php include '../resources/footer.php'; ?>
 
 </div>
 
